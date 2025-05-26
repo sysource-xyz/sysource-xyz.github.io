@@ -1,47 +1,92 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sourcing Your Life</title>
+  <title>https SYS funkin</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon.png" />
+  <link href="pages/fonts/PhantomMuff.ttf" rel="stylesheet" type="font/ttf">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @font-face {
       font-family: 'PhantomMuff';
-      src: url('PhantomMuff.ttf') format('truetype');
+      src: url('pages/fonts/PhantomMuff.ttf') format('truetype');
     }
     body {
-      font-family: 'PhantomMuff', sans-serif;
-      background-image: url('background.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+      font-family: 'PhantomMuff', 'Segoe UI', sans-serif;
     }
   </style>
 </head>
-<body class="text-white bg-black bg-opacity-60">
-  <header class="text-center p-6">
-    <img src="logo.webp" alt="Sourcing Your Life Logo" class="mx-auto w-48 h-auto animate-pulse">
-    <h1 class="text-4xl mt-4">Sourcing Your Life</h1>
+<body class="bg-gray-900 text-white">
+  <header class="text-center py-10 shadow-md bg-gray-800">
+    <img src="pages/logo.webp" alt="logo" class="mx-auto w-52 h-auto">
+    <p class="text-gray-400 italic mt-2">Sourcing Your Life implements functions for Friday Night Funkin' with Animes, Mangas, Mods, Wiki and Android utilities.</p>
   </header>
-  <nav class="flex flex-wrap justify-center space-x-4 mb-6 text-lg">
-    <a href="#downloads" class="hover:text-purple-400">Downloads</a>
-    <a href="#mods" class="hover:text-purple-400">Mods</a>
-    <a href="#wiki" class="hover:text-purple-400">Wiki</a>
-    <a href="#tools" class="hover:text-purple-400">Tools</a>
-    <a href="#animes" class="hover:text-purple-400">Animes & Mangás</a>
+
+  <nav class="flex justify-around items-center bg-gray-700 py-4">
+    <a href="#mods" class="hover:text-pink-400">Mods</a>
+    <a href="#animes" class="hover:text-pink-400">Animes</a>
+    <a href="#mangas" class="hover:text-pink-400">Mangás</a>
+    <a href="#wiki" class="hover:text-pink-400">Wiki</a>
+    <a href="#downloads" class="bg-pink-600 px-3 py-1 rounded hover:bg-pink-500">Android</a>
+    <a href="#engines" class="bg-pink-600 px-3 py-1 rounded hover:bg-pink-500">Engine's</a>
   </nav>
-  <section class="text-center">
-    <p class="text-xl">Bem-vindo ao <strong>Sourcing Your Life</strong> – seu centro para Friday Night Funkin’ e mais!</p>
-  </section>
-  <footer class="mt-12 text-center">
-    <p>Links Sociais:</p>
-    <div class="flex justify-center space-x-6 mt-2">
-      <a href="#" class="text-red-500 font-bold">YouTube</a>
-      <a href="#" class="text-blue-400 font-bold">Instagram</a>
-      <a href="#" class="text-gray-200 font-bold">GitHub</a>
-    </div>
+
+  <main class="max-w-5xl mx-auto px-4 py-8">
+    <section id="intro" class="bg-gray-800 rounded-xl p-6 mb-6">
+      <p>Sourcing Your Life implements functions for Friday Night Funkin' like .hx or .lua creator, with Animes, Mangas, Mods for Android and a Wiki.</p>
+    </section>
+
+    <section id="recent" class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Recentes / Recent</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-700 p-4 rounded">
+          <img src="pages/thumbs/mod1.webp" alt="Mod 1" class="rounded">
+          <h3 class="mt-2 font-bold">Mod Title</h3>
+          <p class="text-sm text-gray-400">Time of posting</p>
+        </div>
+        <div class="bg-gray-700 p-4 rounded">
+          <img src="pages/thumbs/mod2.webp" alt="Mod 2" class="rounded">
+          <h3 class="mt-2 font-bold">Mod Title</h3>
+          <p class="text-sm text-gray-400">Time of posting</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="downloads" class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Downloads</h2>
+      <a href="pages/downloads.html" class="text-pink-400 underline">See all Downloads</a>
+    </section>
+
+    <section id="socials" class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Admin Social's Links</h2>
+      <div class="flex flex-wrap gap-4">
+        <a href="https://youtube.com" target="_blank" class="text-red-500">YouTube</a>
+        <a href="https://github.com" target="_blank" class="text-white">GitHub</a>
+        <a href="https://github.com/orgs" target="_blank" class="text-white">GitHub Org</a>
+        <a href="https://instagram.com" target="_blank" class="text-pink-400">Instagram</a>
+        <a href="https://discord.com" target="_blank" class="text-indigo-400">Discord</a>
+        <a href="https://example.com/source-code" class="text-yellow-400">Source Code</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center bg-gray-800 py-4 text-sm text-gray-500">
+    &copy; 2025 TheGlauberShow Hospeded in GitHub Pages.
   </footer>
+
+  <script>
+    // Detectar idioma do navegador e redirecionar
+    const lang = navigator.language || navigator.userLanguage;
+    if (lang.startsWith('pt')) {
+      // português
+      // window.location.href = '#pt';
+    } else {
+      // inglês
+      // window.location.href = '#en';
+    }
+  </script>
 </body>
 </html>
