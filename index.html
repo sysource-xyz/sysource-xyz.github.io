@@ -5,38 +5,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sourcing Your Life</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="header-logo">
-    <img src="codename-animated.gif" alt="Sourcing Your Life Logo" />
-  </header>
-
-  <nav class="menu">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#downloads">Downloads</a></li>
-      <li><a href="#mods">Mods</a></li>
-      <li><a href="#wiki">Wiki</a></li>
-    </ul>
-    <select onchange="changeLang(this.value)">
-      <option value="pt">PT-BR</option>
-      <option value="en">EN</option>
-    </select>
-  </nav>
-
-  <main>
-    <section id="home"><h2>Bem-vindo ao Sourcing Your Life</h2></section>
-    <section id="downloads"><h2>Downloads</h2></section>
-    <section id="mods"><h2>Mods</h2></section>
-    <section id="wiki"><h2>Wiki</h2></section>
-  </main>
-
-  <script>
-    function changeLang(lang) {
-      alert("Idioma alterado para: " + lang);
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'PhantomMuff';
+      src: url('PhantomMuff.ttf') format('truetype');
     }
-  </script>
+    body {
+      font-family: 'PhantomMuff', sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="text-white bg-black bg-opacity-60">
+  <header class="text-center p-6">
+    <img src="logo.webp" alt="Sourcing Your Life Logo" class="mx-auto w-48 h-auto animate-pulse">
+    <h1 class="text-4xl mt-4">Sourcing Your Life</h1>
+  </header>
+  <nav class="flex flex-wrap justify-center space-x-4 mb-6 text-lg">
+    <a href="#downloads" class="hover:text-purple-400">Downloads</a>
+    <a href="#mods" class="hover:text-purple-400">Mods</a>
+    <a href="#wiki" class="hover:text-purple-400">Wiki</a>
+    <a href="#tools" class="hover:text-purple-400">Tools</a>
+    <a href="#animes" class="hover:text-purple-400">Animes & Mangás</a>
+  </nav>
+  <section class="text-center">
+    <p class="text-xl">Bem-vindo ao <strong>Sourcing Your Life</strong> – seu centro para Friday Night Funkin’ e mais!</p>
+  </section>
+  <footer class="mt-12 text-center">
+    <p>Links Sociais:</p>
+    <div class="flex justify-center space-x-6 mt-2">
+      <a href="#" class="text-red-500 font-bold">YouTube</a>
+      <a href="#" class="text-blue-400 font-bold">Instagram</a>
+      <a href="#" class="text-gray-200 font-bold">GitHub</a>
+    </div>
+  </footer>
 </body>
 </html>
