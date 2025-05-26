@@ -1,27 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>https SYS funkin</title>
+  <title>Sourcing Your Life</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.png" />
 </head>
 <body>
-  <header>
-    <h1>https SYS funkin</h1>
-    <p class="sub">Projeto baseado no Codename Engine</p>
+  <header class="header-logo">
+    <img src="codename-animated.gif" alt="Sourcing Your Life Logo" />
   </header>
 
+  <nav class="menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#downloads">Downloads</a></li>
+      <li><a href="#mods">Mods</a></li>
+      <li><a href="#wiki">Wiki</a></li>
+    </ul>
+    <select onchange="changeLang(this.value)">
+      <option value="pt">PT-BR</option>
+      <option value="en">EN</option>
+    </select>
+  </nav>
+
   <main>
-    <section class="intro">
-      <p>Este é um projeto independente inspirado no <strong>Codename Engine</strong> para mods de Friday Night Funkin'.</p>
-      <p>Site ainda em desenvolvimento. Fique ligado para novidades!</p>
-    </section>
+    <section id="home"><h2>Bem-vindo ao Sourcing Your Life</h2></section>
+    <section id="downloads"><h2>Downloads</h2></section>
+    <section id="mods"><h2>Mods</h2></section>
+    <section id="wiki"><h2>Wiki</h2></section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 DemonBoyYTOFC. Hospedado com ❤️ no GitHub Pages.</p>
-  </footer>
+  <script>
+    function changeLang(lang) {
+      alert("Idioma alterado para: " + lang);
+    }
+  </script>
 </body>
 </html>

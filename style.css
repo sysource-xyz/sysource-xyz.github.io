@@ -1,61 +1,61 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #1e1e1e;
-  color: #ffffff;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('banner.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
 }
 
-header {
-  background-color: #2c2c2c;
+.header-logo {
   text-align: center;
-  padding: 60px 20px;
-  box-shadow: 0 2px 5px #00000070;
+  margin-top: 20px;
 }
 
-header h1 {
-  font-size: 3em;
-  color: #ff0055;
-  animation: pulse 2s infinite;
+.header-logo img {
+  max-width: 80%;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 2s forwards;
 }
 
-header .sub {
-  color: #aaa;
-  margin-top: 10px;
-  font-style: italic;
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
 
-@keyframes pulse {
-  0%, 100% { text-shadow: 0 0 10px #ff005580; }
-  50% { text-shadow: 0 0 20px #ff0055cc; }
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+select {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
 }
 
 main {
-  flex: 1;
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.intro {
-  background: #2b2b2b;
   padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #444;
-}
-
-footer {
-  background-color: #181818;
   text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #888;
+}
+
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
