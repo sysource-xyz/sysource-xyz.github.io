@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Windows 7 / XP Style Webpage :D</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #3a6ea5 0%, #b0c4de 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .taskbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(to top, #245edb 80%, #6ca0dc 100%);
+            border-top: 2px solid #fff;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            z-index: 100;
+        }
+        .start-btn {
+            background: linear-gradient(to bottom, #e3e3e3 0%, #b0c4de 100%);
+            border: 1px solid #888;
+            border-radius: 5px;
+            color: #222;
+            font-weight: bold;
+            padding: 5px 18px 5px 32px;
+            margin: 0 10px;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 1px 1px 2px #888;
+        }
+        .start-btn::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2002.svg') no-repeat center/contain;
+        }
+        .window {
+            width: 500px;
+            margin: 60px auto 80px auto;
+            background: #f3f3f3;
+            border: 2px solid #b0c4de;
+            border-radius: 7px 7px 5px 5px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .window-titlebar {
+            background: linear-gradient(to right, #245edb 0%, #6ca0dc 100%);
+            color: #fff;
+            padding: 8px 12px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #b0c4de;
+        }
+        .window-controls {
+            display: flex;
+            gap: 4px;
+        }
+        .window-controls button {
+            width: 18px;
+            height: 18px;
+            border: none;
+            border-radius: 2px;
+            margin-left: 2px;
+            cursor: pointer;
+        }
+        .window-controls .minimize { background: #f9d923; }
+        .window-controls .maximize { background: #3fc56b; }
+        .window-controls .close { background: #e74c3c; }
+        .window-content {
+            padding: 24px;
+            color: #222;
+            font-size: 1.1em;
+        }
+        @media (max-width: 600px) {
+            .window { width: 95%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="window-titlebar">
+            <span>My Computer</span>
+            <div class="window-controls">
+                <button class="minimize" title="Minimize"></button>
+                <button class="maximize" title="Maximize"></button>
+                <button class="close" title="Close"></button>
+            </div>
+        </div>
+        <div class="window-content">
+            <h2>Welcome to Windows 7 / XP Style Webpage</h2>
+            <p>This page mimics the classic look of Windows 7 and Windows XP, including the familiar taskbar and window design.</p>
+            <ul>
+                <li>Start button with Windows logo</li>
+                <li>Blue gradient taskbar</li>
+                <li>Classic window with title bar and controls</li>
+            </ul>
+        </div>
+    </div>
+    <div class="taskbar">
+        <button class="start-btn">Start</button>
+    </div>
+</body>
+</html>

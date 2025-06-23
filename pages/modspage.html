@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sourcing Your Life - Mods Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="minilogo.png" />
+  <link href="pages/fonts/PhantomMuff.ttf" rel="stylesheet" type="font/ttf">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--<style>
+    @font-face {
+      font-family: 'PhantomMuffFull';
+      src: url('fonts/PhantomMuff Full Letters 1.1.5.ttf') format('truetype');
+      font-display: swap;
+    }
+    body {
+      font-family: 'PhantomMuffFull', 'Segoe UI', sans-serif;
+    }
+  </style>-->
+</head>
+<body class="bg-gray-900 text-white px-4">
+  <header class="py-6 text-center">
+    <img src="minilogo.png" alt="logo" class="mx-auto w-32 h-auto">
+    <p class="text-gray-400 italic mt-4">Sourcing Your Life</p>
+    <h1 id="page-title" class="text-2xl font-bold">Mods</h1>
+  </header>
+
+  <main class="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+    <a href="mods/imposter2025mod/imposter2025.html" class="bg-gray-800 p-2 rounded shadow hover:scale-105 transition">
+      <img src="mods/imposter2025mod/thumbnail.jpg" alt="Imposter 2025" class="w-full h-40 object-cover mb-2 rounded">
+      <h2 class="text-lg font-semibold text-center">Imposter 2025</h2>
+    </a>
+    <!-- + Mais mods -->
+  </main>
+
+  <footer class="text-center py-6 text-sm text-gray-500">
+    <p>&copy; 2025 Sourcing Your Life</p>
+  </footer>
+
+  <script>
+    const lang = navigator.language || navigator.userLanguage;
+
+    const translations = {
+      "pt": {
+        "pageTitle": "Todos os Mods"
+      },
+      "en": {
+        "pageTitle": "All Mods"
+      }
+    };
+
+    const locale = lang.startsWith("pt") ? "pt" : "en";
+    document.getElementById("page-title").textContent = translations[locale].pageTitle;
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+style.css:
+.window-xp {
+  background: #e3e9f7;
+  border: 2px solid #3a3a3a;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px #0008;
+  width: 350px;
+  padding: 24px;
+  color: #222;
+  font-family: Tahoma, 'Segoe UI', sans-serif;
+}
+.title-bar-xp {
+  background: linear-gradient(90deg, #3a6ea5, #5b9bd5);
+  color: #fff;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  margin: -24px -24px 16px -24px;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+.button-xp {
+  background: linear-gradient(90deg, #3a6ea5, #5b9bd5);
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 12px;
+  font-family: Tahoma, 'Segoe UI', sans-serif;
+}
+.button-xp:hover {
+  background: #2c4a7a;
+}
+
+HTML:
+<link rel="stylesheet" href="style.css">
+<div class="window-xp">
+  <div class="title-bar-xp">Minha Janela XP</div>
+  <p>Conteúdo aqui!</p>
+  <button class="button-xp">Botão XP</button>
+</div>
